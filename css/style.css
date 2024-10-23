@@ -252,7 +252,7 @@ p{
 
 @keyframes scroll {
     0%{
-        transform: translate(calc(-250px*21));
+        transform: translate(calc(-250px*15));
     }
     100%{
         transform: translate(0);
@@ -283,7 +283,7 @@ p{
         transform: translate(0);
     }
     100%{
-        transform: translate(calc(-250px*20));
+        transform: translate(calc(-250px*15));
     }
 }
 
