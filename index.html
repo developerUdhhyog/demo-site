@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebnineX Media | Digital Marketing Company</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+      .bg-light {
+        background: #000000 !important;
+      }
+      .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+        color: #fb2056;
+      }
+
+      .nav-link:focus, .nav-link:hover {
+        color: #fb2056;
+      }
+
+      .nav-link {
+        color: #fb2056;
+      }
+
+      .navbar-brand{
+        color: #fb2056;
+      }
+
+      li.nav-item {
+        text-align: center;
+      }
+      .nav-link {
+        font-size: 13px;
+      }
+      .dropdown-item{
+        font-size: 13px;
+      }
+      .headerImageBox{
+        border: 1px solid black;
+        width: 100%;
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .image {
+        background-image: url(img/background/background_head.png);
+        height: 450px;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        position: absolute;
+        z-index: 1;
+      }
+      .headerContent{
+        position: relative;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* margin-top: 14%; */
+      }
+      .companyNameImage, .companyNameSlowgon, .companyTitle, .companyServicesDisplay, .clicknowBtn{
+        color: white;
+      }
+
+      .companyNameImage{
+        font-size: 34px;
+        font-weight: 600;
+      }
+
+      .companyNameSlowgon{
+        font-size: 18px;
+      }
+
+      .companyTitle{
+        font-size: 48px;
+        font-weight: 600;
+        color: #F78107;
+      }
+
+      .clicknowBtn{
+        box-shadow: 0px 0px 7px gray;
+        padding: 10px 20px;
+        font-size: 12px;
+        font-weight: 600;
+        border-radius: 22px;
+        background: blue;
+      }
+      .clicknowBtn:active{
+        box-shadow: inset 0px 0px 7px gray;
+      }
+      .companyServicesDisplay{
+        font-size: 34px;
+        font-weight: 600;
+        margin-top: 13px;
+        margin-bottom: 16px;
+      }
+          /* Section Container */
+    .expertise-section {
+      padding: 50px 20px;
+      background-color: #f9f9f9;
+      text-align: center;
+    }
+
+    .expertise-section h2 {
+      font-size: 2.5em;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .expertise-section p {
+      font-size: 1.1em;
+      color: #555;
+      margin-bottom: 40px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* Expertise Cards */
+    .expertise-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .expertise-card {
+      background-color: #fff;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .expertise-card:hover {
+      transform: translateY(-10px);
+    }
+
+    .expertise-card h3 {
+      font-size: 1.3em;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .expertise-card p {
+      font-size: 1em;
+      color: #666;
+      line-height: 1.6;
+    }
+
+    /* Icons */
+    .expertise-card .icon {
+      font-size: 2.5em;
+      color: #4a90e2;
+      margin-bottom: 15px;
+    }
+
+    .performance-solutions {
+        background-color: #ffffff; /* White background */
+        padding: 60px 0;
+    }
+
+    .section-title {
+        text-align: center;
+        font-size: 2.5rem;
+        color: #333; /* Dark text color */
+        margin-bottom: 40px;
+    }
+
+    .solutions-grid {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 0 20px;
+    }
+
+    .solution-card {
+        background-color: #f0f8ff; /* Light blue background */
+        border-radius: 10px;
+        padding: 30px;
+        text-align: center;
+        margin: 10px;
+        flex: 1 1 calc(30% - 20px); /* Responsive width */
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .solution-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .icon-container {
+        margin-bottom: 15px;
+    }
+
+    .icon-container img {
+        width: 60px; /* Icon size */
+        height: 60px;
+    }
+
+    .cta-button {
+        display: inline-block;
+        background-color: #28a745; /* Green button */
+        color: white;
+        padding: 12px 24px;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: background-color 0.3s;
+    }
+
+    .cta-button:hover {
+        background-color: #218838; /* Darker green on hover */
+    }
+
+    .footerOne {
+        display: flex;
+        padding: 15px 30px;
+        background: #2e2c36;
+        flex-wrap: wrap;
+        gap: 16px;
+        justify-content: space-between;
+    }
+
+    .footerSecTwo ul li a {
+        color: white;
+        list-style: none;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .footerSecTwo ul li{
+        list-style: none;
+    }
+
+    .footerTwo {
+        text-align: center;
+        background: gray;
+        padding: 2px;
+        color: white;
+        font-weight: 600;
+        font-size: 11px;
+    }
+
+    /* why choose us */
+    .why-choose-us {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #282c35;
+      color: #f1f1f1;
+      border-radius: 12px;
+      text-align: center;
+      font-family: Arial, sans-serif;
+    }
+
+    .why-choose-us h2 {
+      font-size: 2.5rem;
+      color: #ffcc00;
+      margin-bottom: 15px;
+    }
+
+    .why-choose-us .intro {
+      font-size: 1.1rem;
+      color: #cccccc;
+      margin-bottom: 30px;
+    }
+
+    .why-choose-us .points {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .point {
+      background-color: #333;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .point:hover {
+      transform: translateY(-5px);
+    }
+
+    .icon {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      color: #ffcc00;
+    }
+
+    .point h3 {
+      font-size: 1.3rem;
+      color: #ffcc00;
+      margin-bottom: 8px;
+    }
+
+    .point p {
+      font-size: 0.95rem;
+      color: #e0e0e0;
+      line-height: 1.5;
+    }
+
+    /* our clients  */
+    @keyframes scroll {
+    0%{
+        transform: translate(calc(-250px*15));
+    }
+    100%{
+        transform: translate(0);
+    }
+}
+
+.slider{
+    height: 100px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: auto;
+}
+.slider .slide_track{
+    animation: scroll 40s linear infinite;
+    display: flex;
+    width: calc(250px * 9);
+}
+
+.slider .clide{
+    height: 100px;
+    width: 250px;
+}
+
+/* 2nd crasual  */
+@keyframes scroll2 {
+    0%{
+        transform: translate(0);
+    }
+    100%{
+        transform: translate(calc(-250px*15));
+    }
+}
+
+.slider2{
+    height: 100px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: auto;
+}
+.slider2 .slide_track2{
+    animation: scroll2 40s linear infinite;
+    display: flex;
+    width: calc(250px * 41);
+}
+
+.slider2 .slide2{
+    height: 100px;
+    width: 250px;
+}
+
+/*  */
+.clients-section {
+    margin-top: 4%;
+}
+.clients-section h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 42px;
+}
+
+@media only screen and (max-width: 600px) {
+  .companyNameImage {
+    font-size: 30px;
+    font-weight: 600;
+  }
+  .companyTitle {
+    font-size: 40px;
+    font-weight: 600;
+    color: #F78107;
+  }
+
+  .companyServicesDisplay {
+    font-size: 28px;
+    font-weight: 600;
+    margin-top: 13px;
+    margin-bottom: 16px;
+  }
+}
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet">
+
+</head>
+<body>
+  <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container">
+            <a class="navbar-brand" href="#">WebnineX Media</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <!-- <span class="navbar-toggler-icon"></span> -->
+               <img src="img/toggleBtn.png" alt="">
+          </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Performance Solutions
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Performance For D2C & E-Commerce</a></li>
+                    <li><a class="dropdown-item" href="#">Performance For Mobile App</a></li>
+                    <li><a class="dropdown-item" href="#">Performance For B2B</a></li>
+                    <li><a class="dropdown-item" href="#">Performance For MarketPLace</a></li>
+                    <li><a class="dropdown-item" href="#">Performance For OMNIChannele</a></li>
+                    <li><a class="dropdown-item" href="#">Descisionboard AI</a></li>
+                    <li><a class="dropdown-item" href="#">DART BOARD</a></li>
+                    <li><a class="dropdown-item" href="#">Dash IQ</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Digital Marketing Services
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">SEO</a></li>
+                    <li><a class="dropdown-item" href="#">YouTube</a></li>
+                    <li><a class="dropdown-item" href="#">Google Ads</a></li>
+                    <li><a class="dropdown-item" href="#">Social Media</a></li>
+                    <li><a class="dropdown-item" href="#">Business Listing</a></li>
+                    <li><a class="dropdown-item" href="#">Website Designing</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Industries</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Others
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">DIGIDARTS DIRECT</a></li>
+                    <li><a class="dropdown-item" href="#">CASE STUDIES</a></li>
+                    <li><a class="dropdown-item" href="#">Middle East & Africa</a></li>
+                    <li><a class="dropdown-item" href="#">MEDIA SHOUT-OUTS</a></li>
+                    <li><a class="dropdown-item" href="#">INDUSTRY INSIGHTS</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="Contact-us.html">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+      </nav>
+      <div class="headerImageBox">
+        <div class="image"></div>
+        <div class="headerContent">
+          <div class="companyNameImage">WebnineX Media</div>
+          <div class="companyNameSlowgon">· TRUST · GROW · IDEAS</div>
+          <div class="companyTitle">Digital Marketing</div>
+          <div class="companyServicesDisplay" id="companyServicesDisplay"></div>
+          <div class="clicknowBtn">Click Now</div>
+        </div>
+      </div>
+  </header>
+
+  <!-- Our Clients  -->
+  <section class="clients-section">
+    <h2>Our Clients</h2>
+    <p style="margin-bottom: 3rem; text-align: center;">Having forayed into the realm of performance-driven digital marketing, we have served 200+ clients hailing from diverse industries.</p>
+    <div class="slider">
+        <div class="slide_track">
+            <div class="slide">
+                <img src="https://digidarts.com/wp-content/uploads/2022/05/moti.jpg" height="100" width="150" alt="" title="">
+            </div>
+            <div class="slide">
+                <img src="https://digidarts.com/wp-content/uploads/2022/05/bodess.jpg" height="100" width="150" alt="" title="">
+            </div>
+            <div class="slide">
+                <img src="https://www.digidarts.com/wp-content/uploads/2024/02/flipkart15.png" height="100" width="150" alt="" title="">
+            </div>
+            <div class="slide">
+                <img src="https://www.digidarts.com/wp-content/uploads/2024/02/amazon14.png" height="100" width="150" alt="" title="">
+            </div>
+            <div class="slide">
+                <img src="https://www.digidarts.com/wp-content/uploads/2023/07/insurnce-samadhan.png" height="100" width="150" alt="" title="">
+            </div>
+            <div class="slide">
+                <img src="https://www.digidarts.com/wp-content/uploads/2023/07/BSC.png" height="100" width="150" alt="" title="">
+            </div>
+            <div class="slide">
+                <img src="https://www.digidarts.com/wp-content/uploads/2024/02/burgerking5.png" height="100" width="150" alt="" title="">
+            </div>
+            <div class="slide">
+                <img src="https://www.digidarts.com/wp-content/uploads/2024/02/primevideo18.png" height="100" width="150" alt="" title="">
+            </div>
+            <div class="slide">
+                <img src="https://digidarts.com/wp-content/uploads/2021/09/meeshohome-min.png" height="100" width="150" alt="" title="">
+            </div>
+            <div class="slide">
+                <img src="https://digidarts.com/wp-content/uploads/2021/09/Asicshome-min.png" height="100" width="150" alt="" title="">
+            </div>
+            <div class="slide">
+                <img src="https://www.digidarts.com/wp-content/uploads/2024/02/shuttl13.png" height="100" width="150" alt="" title="">
+            </div>
+            <div class="slide">
+                <img src="https://digidarts.com/wp-content/uploads/2021/09/G4Shome-min.png" height="100" width="150" alt="" title="">
+            </div>
+            <div class="slide">
+                <img src="https://digidarts.com/wp-content/uploads/2021/09/Vogohome-min.png" height="100" width="150" alt="" title="">
+            </div>
+            <div class="slide">
+                <img src="https://digidarts.com/wp-content/uploads/2021/09/Verticalhome-min.png" height="100" width="150" alt="" title="">
+            </div>
+            <div class="slide">
+                <img src="https://www.digidarts.com/wp-content/uploads/2024/02/drwillmar1.png" height="100" width="150" alt="" title="">
+            </div>
+            <div class="slide">
+                <img src="https://www.digidarts.com/wp-content/uploads/2024/02/hdfcbank2.png" height="100" width="150" alt="" title="">
+            </div>
+            <div class="slide">
+                <img src="https://digidarts.com/wp-content/uploads/2021/09/chefkarthome-min.png" height="100" width="150" alt="" title="">
+            </div>
+            <div class="slide">
+                <img src="https://digidarts.com/wp-content/uploads/2021/09/Yalehome-min.png" height="100" width="150" alt="" title="">
+            </div>
+            <div class="slide">
+                <img src="https://digidarts.com/wp-content/uploads/2022/04/pil.png" height="100" width="150" alt="" title="">
+            </div>
+            <div class="slide">
+                <img src="https://www.digidarts.com/wp-content/uploads/2024/02/disneyhotstar4.png" height="100" width="150" alt="" title="">
+            </div>
+            <div class="slide">
+                <img src="https://digidarts.com/wp-content/uploads/2021/09/industrybuyinghome-min.png" height="100" width="150" alt="" title="">
+            </div>                
+        </div>
+    </div>
+    <div class="slider2">
+        <div class="slide_track2">
+            <div class="slide2">
+                <img src="https://www.digidarts.com/wp-content/uploads/2024/02/acko11.png" height="100" width="150" alt="" title="">
+            </div>
+            <div class="slide2">
+                <img src="https://www.digidarts.com/wp-content/uploads/2024/02/cleartrip9.png" height="100" width="150" alt="" title="">
+            </div>
+            <div class="slide2">
+                <img src="https://www.digidarts.com/wp-content/uploads/2024/02/emaar6.png" height="100" width="150" alt="" title="">
+            </div>
+            <div class="slide2">
+                <img src="https://www.digidarts.com/wp-content/uploads/2024/02/indigo10.png" height="100" width="150" alt="" title="">
+            </div>
+            <div class="slide2">
+                <img src="https://digidarts.com/wp-content/uploads/2021/09/gradeuphome-min.png" height="100" width="150" alt="" title="">
+            </div>
+            <div class="slide2">
+                <img src="https://digidarts.com/wp-content/uploads/2021/09/snapdealhome-min.png" height="100" width="150" alt="" title="">
+            </div>
+            <div class="slide2">
+                <img src="https://www.digidarts.com/wp-content/uploads/2024/02/solethreads8.png" height="100" width="150" alt="" title="">
+            </div>
+            <div class="slide2">
+                <img src="https://www.digidarts.com/wp-content/uploads/2023/07/Baby-Forest.png" height="100" width="150" alt="" title="">
+            </div>
+            <div class="slide2">
+                <img src="https://www.digidarts.com/wp-content/uploads/2024/08/logo-3.png" height="100" width="150" alt="" title="">
+            </div>
+            <div class="slide2">
+                <img src="https://www.digidarts.com/wp-content/uploads/2024/08/64896485370706864b99f36a_Navbar-container.svg" height="100" width="150" alt="" title="">
+            </div>
+            <div class="slide2">
+                <img src="https://www.digidarts.com/wp-content/uploads/2024/08/Group_20220513073721_0.jpg" height="100" width="150" alt="" title="">
+            </div>
+            <div class="slide2">
+                <img src="https://www.digidarts.com/wp-content/uploads/2024/08/logo.png" height="100" width="150" alt="" title="">
+            </div>
+            <div class="slide2">
+                <img src="https://www.digidarts.com/wp-content/uploads/2024/08/dorset.png" height="100" width="150" alt="" title="">
+            </div>
+            <div class="slide2">
+                <img src="https://www.digidarts.com/wp-content/uploads/2024/08/alive-wellness-clinics-1.png" height="100" width="150" alt="" title="">
+            </div>
+            <div class="slide2">
+                <img src="https://www.digidarts.com/wp-content/uploads/2024/08/Euronics-Logo.png" height="100" width="150" alt="" title="">
+            </div>
+            <div class="slide2">
+                <img src="https://www.digidarts.com/wp-content/uploads/2024/08/Futurense_w_Text.BOW_-1024x804-1.png" height="100" width="150" alt="" title="">
+            </div>
+            <div class="slide2">
+                <img src="https://digidarts.com/wp-content/uploads/2022/04/bir.png" height="100" width="150" alt="" title="">
+            </div>
+            <div class="slide2">
+                <img src="https://digidarts.com/wp-content/uploads/2022/05/loco.jpg" height="100" width="150" alt="" title="">
+            </div>
+            <div class="slide2">
+                <img src="https://www.digidarts.com/wp-content/uploads/2024/02/uber12.png" height="100" width="150" alt="" title="">
+            </div>
+            <div class="slide2">
+                <img src="https://digidarts.com/wp-content/uploads/2021/09/Otipyhome-min.png" height="100" width="150" alt="" title="">
+            </div>
+        </div>
+    </div>
+</section>
+  
+  <!-- why choose us  -->
+  <section class="why-choose-us">
+    <h2>Why Choose Us?</h2>
+    <p class="intro">
+      At <strong>Digital Global India</strong>, we believe your website is more than a digital presence—it’s a powerful business tool. We’re here to help you create a captivating website that attracts and retains customers.
+    </p>
+  
+    <div class="points">
+      <div class="point">
+        <div class="icon">🎓</div>
+        <h3>Proven Experience</h3>
+        <p>With over <strong>10 years of experience</strong> in web design, we create websites that leave a lasting impression.</p>
+      </div>
+      
+      <div class="point">
+        <div class="icon">🛠️</div>
+        <h3>Broad Expertise</h3>
+        <p>Our team excels in <strong>UI design</strong> and <strong>SEO</strong>, ensuring your site looks great and performs even better.</p>
+      </div>
+      
+      <div class="point">
+        <div class="icon">💰</div>
+        <h3>Affordable Solutions</h3>
+        <p>We offer <strong>budget-friendly packages</strong> so every business can achieve an impactful online presence.</p>
+      </div>
+      
+      <div class="point">
+        <div class="icon">💼</div>
+        <h3>Customer-Centric Approach</h3>
+        <p>Your success is our priority. We support you every step of the way to ensure your website achieves its goals.</p>
+      </div>
+    </div>
+  </section>  
+
+  <!-- Industry Specific Expertise Section -->
+  <section class="expertise-section">
+      <h2>Industry Specific Expertise</h2>
+      <p>Our team delivers tailored solutions across industries, addressing unique challenges to drive growth and innovation.</p>
+
+      <div class="expertise-cards">
+        <!-- Card 1 -->
+        <div class="expertise-card">
+          <div class="icon"><img src="img/logos/industrial-park.png" alt="Performance for D2C & E-commerce" title="Performance for D2C & E-commerce"></div>
+          <h3>Performance for D2C & E-commerce</h3>
+          <p>Maximizing direct-to-consumer reach and engagement for online retail success.</p>
+        </div>
+        
+        <!-- Card 2 -->
+        <div class="expertise-card">
+          <div class="icon"><img src="img/logos/social-media.png" alt="Performance for Social Commerce" title="Performance for Social Commerce"></div>
+          <h3>Performance for Social Commerce</h3>
+          <p>Leveraging social media channels to boost brand visibility and consumer interaction.</p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="expertise-card">
+          <div class="icon"><img src="img/logos/code.png" alt="Performance for Mobile Apps" title="Performance for Mobile Apps"></div>
+          <h3>Performance for Mobile Apps</h3>
+          <p>Optimizing mobile applications for a seamless, user-friendly experience.</p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="expertise-card">
+          <div class="icon"><img src="img/logos/emerging-markets.png" alt="Performance for Marketplace" title="Performance for Marketplace"></div>
+          <h3>Performance for Marketplace</h3>
+          <p>Enhancing multi-vendor platforms to increase scalability and efficiency.</p>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="expertise-card">
+          <div class="icon"><img src="img/logos/omnichannel-merchandising.png" alt="Performance for Omnichannel" title="Performance for Omnichannel"></div>
+          <h3>Performance for Omnichannel</h3>
+          <p>Creating consistent experiences across in-store, online, and mobile channels.</p>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="expertise-card">
+          <div class="icon"><img src="img/logos/b2b.png" alt="Performance for B2B" title="Performance for B2B"></div>
+          <h3>Performance for B2B</h3>
+          <p>Empowering business-to-business platforms with reliable, scalable solutions.</p>
+        </div>
+      </div>
+  </section>
+
+  <section class="performance-solutions">
+      <div class="container">
+          <h2 class="section-title">360° Performance Solutions</h2>
+          <div class="solutions-grid">
+              <div class="solution-card">
+                  <div class="icon-container">
+                      <img src="img/logos/programmatic.png" alt="Media Buying" />
+                  </div>
+                  <h3>Media Buying</h3>
+                  <p>Optimize your ad spend with strategic media buying solutions that deliver results.</p>
+                  <a href="#" class="cta-button">Discover More</a>
+              </div>
+              <div class="solution-card">
+                  <div class="icon-container">
+                      <img src="img/logos/design-thinking.png" alt="Creatives For Performance" />
+                  </div>
+                  <h3>Creatives For Performance</h3>
+                  <p>Create compelling creatives that drive engagement and boost performance metrics.</p>
+                  <a href="#" class="cta-button">Discover More</a>
+              </div>
+              <div class="solution-card">
+                  <div class="icon-container">
+                      <img src="img/logos/seo.png" alt="Search Engine Optimization" />
+                  </div>
+                  <h3>Search Engine Optimization</h3>
+                  <p>Enhance your online visibility and drive organic traffic through effective SEO strategies.</p>
+                  <a href="#" class="cta-button">Discover More</a>
+              </div>
+              <div class="solution-card">
+                  <div class="icon-container">
+                      <img src="img/logos/affiliate-marketing.png" alt="Affiliate Marketing" />
+                  </div>
+                  <h3>Affiliate Marketing</h3>
+                  <p>Leverage affiliate partnerships to increase reach and drive conversions effectively.</p>
+                  <a href="#" class="cta-button">Discover More</a>
+              </div>
+              <div class="solution-card">
+                  <div class="icon-container">
+                      <img src="img/logos/social-media2.png" alt="Social Media" />
+                  </div>
+                  <h3>Social Media</h3>
+                  <p>Engage your audience through targeted social media campaigns that build brand loyalty.</p>
+                  <a href="#" class="cta-button">Discover More</a>
+              </div>
+              <div class="solution-card">
+                  <div class="icon-container">
+                      <img src="img/logos/strategy-development.png" alt="Marketing Analytics" />
+                  </div>
+                  <h3>Marketing Analytics</h3>
+                  <p>Gain insights into your marketing performance and make data-driven decisions.</p>
+                  <a href="#" class="cta-button">Discover More</a>
+              </div>
+          </div>
+      </div>
+  </section>
+  <div class="map">
+    <div style="border: 0; width: 100%; margin-top: 7%; display: flex; justify-content: center;">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14037.536552579115!2d76.97890439611619!3d28.407663633611488!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d3d5ac9e76f1b%3A0x1764a8014ed88d02!2sTOWER-2%2C%20DLF%20CORPORATE%20GREENS%2C%20Sector%2074A%2C%20Gurugram%2C%20Narsinghpur%2C%20Haryana%20122004!5e0!3m2!1sen!2sin!4v1730204424539!5m2!1sen!2sin" style="margin-bottom: 7%; width: 90%;" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+  </div>
+
+  <footer style="background-color: #222; color: #fff; padding: 40px 0;">
+          <div class="container">
+            <div class="row">
+              <!-- Contact Information with Logo -->
+              <div class="col-md-4">
+                <div style="margin-bottom: 15px;">
+                  <img src="img/logo.png" alt="WebnineX Logo" style="width: 150px;"> <!-- Custom Logo -->
+                </div>
+                <h5>Contact Info</h5>
+                <p style="color: #fff;">
+                  WebnineX Media<br>
+                  117, Tower 2, DLF Corporate Green,<br>
+                  Sector- 74A , Gurugram<br>
+                  Phone: 9599198048<br>
+                  Email: info@webninexmedia.com
+                </p>
+              </div>
+              
+              <!-- Social Media Links -->
+              <div class="col-md-4" >
+                  <h5>Follow Us</h5>
+                  <ul style="list-style-type: none; padding-left: 0;">
+                      <li><a href="#" style="color: #fff; text-decoration: none;">Facebook</a></li>
+                      <li><a href="#" style="color: #fff; text-decoration: none;">Twitter</a></li>
+                      <li><a href="#" style="color: #fff; text-decoration: none;">Instagram</a></li>
+                      <li><a href="#" style="color: #fff; text-decoration: none;">LinkedIn</a></li>
+                      <li><a href="#" style="color: #fff; text-decoration: none;">YouTube</a></li>
+                  </ul>
+                  </div>
+
+              <!-- Content Links -->
+              <div class="col-md-4">
+                <h5>WebnineX Media</h5>
+                <ul style="list-style-type: none; padding-left: 0;">
+                  <li><a href="#" style="color: #fff; text-decoration: none;">Home</a></li>
+                  <li><a href="#" style="color: #fff; text-decoration: none;">Performance Solutions</a></li>
+                  <li><a href="#" style="color: #fff; text-decoration: none;">Performance For D2C & E-Commerce</a></li>
+                  <li><a href="#" style="color: #fff; text-decoration: none;">Performance For Mobile App</a></li>
+                  <li><a href="#" style="color: #fff; text-decoration: none;">Performance For B2B</a></li>
+                  <li><a href="#" style="color: #fff; text-decoration: none;">Performance For Marketplace</a></li>
+                  <li><a href="#" style="color: #fff; text-decoration: none;">Performance For OMNIChannele</a></li>
+                  <li><a href="#" style="color: #fff; text-decoration: none;">Descisionboard AI</a></li>
+                  <li><a href="#" style="color: #fff; text-decoration: none;">DART BOARD</a></li>
+                  <li><a href="#" style="color: #fff; text-decoration: none;">Dash IQ</a></li>
+                </ul>
+              </div>
+              
+            </div>
+            <hr style="background-color: #444;">
+            <div class="text-center" style="padding-top: 10px;">
+              <p style="margin: 0; color: #888;">&copy; 2024 WebnineX Media. All rights reserved.</p>
+            </div>
+          </div>
+  </footer>
+
+  <script>
+    function animateTextLines(elementId, lines, typingSpeed = 100, lineDelay = 2000) {
+      const displayElement = document.getElementById(elementId);
+      let lineIndex = 0;
+      let charIndex = 0;
+
+      function typeNextCharacter() {
+        // Add the next character from the current line to display
+        displayElement.textContent += lines[lineIndex].charAt(charIndex);
+        charIndex++;
+
+        // If we've reached the end of the current line, reset and move to the next line
+        if (charIndex < lines[lineIndex].length) {
+          setTimeout(typeNextCharacter, typingSpeed);
+        } else {
+          // Wait for a delay, then clear and start typing the next line
+          setTimeout(() => {
+            charIndex = 0;
+            lineIndex = (lineIndex + 1) % lines.length; // Loop back to the first line
+            displayElement.textContent = ""; // Clear current text for the new line
+            typeNextCharacter();
+          }, lineDelay);
+        }
+      }
+
+      // Start the typing effect
+      typeNextCharacter();
+    }
+
+    function textAnimation(){
+      // Usage:
+      const lines = [
+        "Performance For D2C & E-Commerce",
+        "Performance For Mobile App",
+        "Performance For B2B",
+        "Performance For MarketPLace"
+      ];
+
+      animateTextLines("companyServicesDisplay", lines, 100, 2000);
+    }
+
+    function initCarousel(carousel, direction) {
+  const track = carousel.querySelector('.carousel-track');
+  const cards = Array.from(track.children);
+  const cardWidth = cards[0].offsetWidth;
+  let position = 0;
+  
+  // Determine scrolling direction and speed
+  const speed = 2; // Adjust speed as needed (pixels per frame)
+  let move;
+
+  function animate() {
+    if (direction === 'right-to-left') {
+      position -= speed;
+      if (position <= -cardWidth * cards.length) {
+        position = 0;
+      }
+    } else if (direction === 'left-to-right') {
+      position += speed;
+      if (position >= cardWidth * cards.length) {
+        position = 0;
+      }
+    }
+    track.style.transform = `translateX(${position}px)`;
+    move = requestAnimationFrame(animate);
+  }
+
+  // Start animation on load
+  animate();
+
+  // Pause animation on hover
+  carousel.addEventListener('mouseenter', () => cancelAnimationFrame(move));
+  carousel.addEventListener('mouseleave', () => animate());
+}
+
+    window.onload = function(){
+      textAnimation();
+      const rightToLeftCarousel = document.querySelector('.right-to-left');
+      const leftToRightCarousel = document.querySelector('.left-to-right');
+
+      initCarousel(rightToLeftCarousel, 'right-to-left');
+      initCarousel(leftToRightCarousel, 'left-to-right');
+      // initCarousel();
+    };
+  </script>
+</body>
+</html>
